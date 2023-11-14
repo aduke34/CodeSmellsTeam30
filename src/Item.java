@@ -36,4 +36,8 @@ class Item {
     }
 
     public boolean getIsGiftCard() { return isGiftCard; }
+
+    public boolean inStock() {
+        return quantity != 0;
+    }
 }
