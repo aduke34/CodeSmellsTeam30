@@ -92,7 +92,7 @@ public class Order {
     public boolean hasGiftCard() {
         boolean has_gift_card = false;
         for (Item item : items) {
-            if (item instanceof GiftCardItem) {
+            if (item.getIsGiftCard()) {
                 has_gift_card = true;
                 break;
             }
