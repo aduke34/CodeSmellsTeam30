@@ -6,9 +6,9 @@ class Item {
     private double discountAmount;
     private boolean isGiftCard;
 
-    public Item(String name, double price, int quantity, DiscountType discountType, double discountAmount, boolean isGiftCard) {
-        this.name = name;
-        this.price = price;
+    public Item(SingleItem singleItem, int quantity, DiscountType discountType, double discountAmount, boolean isGiftCard) {
+        this.name = singleItem.getName();
+        this.price = singleItem.getPrice();
         this.quantity = quantity;
         this.discountType = discountType;
         this.discountAmount = discountAmount;
