@@ -9,9 +9,4 @@ public class TaxableItem extends Item {
     public double getTaxRate(){
         return taxRate;
     }
-    public void setTaxRate(double rate) {
-        if(rate>=0){
-            taxRate = rate;
-        }
-    }
 }
