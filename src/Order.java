@@ -106,12 +106,5 @@ public class Order {
             System.out.println(item.getName() + " - " + item.getPrice());
         }
    }
-
-   public void addItemsFromAnotherOrder(Order otherOrder) {
-        for (Item item : otherOrder.getItems()) {
-            items.add(item);
-        }
-   }
-
 }
 
